@@ -16,6 +16,8 @@
 		2C55E69E2450894A0067D6A0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55E69D2450894A0067D6A0 /* LoginController.swift */; };
 		2C55E6A02450AAF80067D6A0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55E69F2450AAF80067D6A0 /* Extensions.swift */; };
 		2CEAE2A62452DB1B004DA852 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEAE2A52452DB1B004DA852 /* AuthButton.swift */; };
+		2CEAE2A82452E96B004DA852 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CEAE2A72452E96B004DA852 /* GoogleService-Info.plist */; };
+		4D9710916B0EC2AD9ED4B28B /* Pods_ShareRide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FC3E5B88582D1A7ED6DD /* Pods_ShareRide.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,10 @@
 		2C55E69D2450894A0067D6A0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2C55E69F2450AAF80067D6A0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2CEAE2A52452DB1B004DA852 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		2CEAE2A72452E96B004DA852 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
+		558188D7575E347922E2A872 /* Pods-ShareRide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareRide.debug.xcconfig"; path = "Target Support Files/Pods-ShareRide/Pods-ShareRide.debug.xcconfig"; sourceTree = "<group>"; };
+		BB5B20881F14097D1EE958FE /* Pods-ShareRide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareRide.release.xcconfig"; path = "Target Support Files/Pods-ShareRide/Pods-ShareRide.release.xcconfig"; sourceTree = "<group>"; };
+		DA35FC3E5B88582D1A7ED6DD /* Pods_ShareRide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareRide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -37,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4D9710916B0EC2AD9ED4B28B /* Pods_ShareRide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -48,6 +55,8 @@
 			children = (
 				2C55E6832450882D0067D6A0 /* ShareRide */,
 				2C55E6822450882D0067D6A0 /* Products */,
+				D3B94B92A6486A61FD938C9C /* Pods */,
+				6BCD90BA86F77955EABD9ADA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +82,7 @@
 				2C55E68D2450882F0067D6A0 /* Assets.xcassets */,
 				2C55E68F2450882F0067D6A0 /* LaunchScreen.storyboard */,
 				2C55E6922450882F0067D6A0 /* Info.plist */,
+				2CEAE2A72452E96B004DA852 /* GoogleService-Info.plist */,
 			);
 			path = ShareRide;
 			sourceTree = "<group>";
@@ -116,6 +126,24 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		6BCD90BA86F77955EABD9ADA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DA35FC3E5B88582D1A7ED6DD /* Pods_ShareRide.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D3B94B92A6486A61FD938C9C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				558188D7575E347922E2A872 /* Pods-ShareRide.debug.xcconfig */,
+				BB5B20881F14097D1EE958FE /* Pods-ShareRide.release.xcconfig */,
+			);
+			name = Pods;
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -123,9 +151,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C55E6952450882F0067D6A0 /* Build configuration list for PBXNativeTarget "ShareRide" */;
 			buildPhases = (
+				7119015B585DB114E7A29386 /* [CP] Check Pods Manifest.lock */,
 				2C55E67D2450882D0067D6A0 /* Sources */,
 				2C55E67E2450882D0067D6A0 /* Frameworks */,
 				2C55E67F2450882D0067D6A0 /* Resources */,
+				A7F2E8735411C4EB5D8B194C /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -175,12 +205,55 @@
 			buildActionMask = 2147483647;
 			files = (
 				2C55E6912450882F0067D6A0 /* LaunchScreen.storyboard in Resources */,
+				2CEAE2A82452E96B004DA852 /* GoogleService-Info.plist in Resources */,
 				2C55E68E2450882F0067D6A0 /* Assets.xcassets in Resources */,
 				2C55E68C2450882D0067D6A0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		7119015B585DB114E7A29386 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ShareRide-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7F2E8735411C4EB5D8B194C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShareRide/Pods-ShareRide-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ShareRide/Pods-ShareRide-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ShareRide/Pods-ShareRide-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		2C55E67D2450882D0067D6A0 /* Sources */ = {
@@ -334,6 +407,7 @@
 		};
 		2C55E6962450882F0067D6A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 558188D7575E347922E2A872 /* Pods-ShareRide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -343,7 +417,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dicoding.academy.ShareRide;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ShareRide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -352,6 +426,7 @@
 		};
 		2C55E6972450882F0067D6A0 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BB5B20881F14097D1EE958FE /* Pods-ShareRide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -361,7 +436,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.dicoding.academy.ShareRide;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.ShareRide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";

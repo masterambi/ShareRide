@@ -6,3 +6,6 @@ DerivedData/
 ## Various settings
 *.pbxuser
 xcuserdata/
+
+## API Key
+GoogleService-Info.plist
