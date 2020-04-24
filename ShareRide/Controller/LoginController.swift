@@ -42,13 +42,9 @@ class LoginController: UIViewController {
                                        isSecureTextEntry: true)
     }()
     
-    private let loginButton: UIButton = {
-        let button = UIButton(type: .system)
+    private let loginButton: AuthButton = {
+        let button = AuthButton(type: .system)
         button.setTitle("Log In", for: .normal)
-        button.setTitleColor(UIColor(white: 1, alpha: 0.7), for: .normal)
-        button.backgroundColor = .mainBlueTint
-        button.layer.cornerRadius = 5
-        button.anchor(height: 50)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         return button
     }()
@@ -68,6 +64,19 @@ class LoginController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        configureUI()
+    }
+    
+    // MARK: - Selectors
+    
+    @objc func handleShowSignUp() {
+        let controller = SignUpController()
+        navigationController?.pushViewController(controller, animated: true)
+    }
+    
+    // MARK: - Helper Functions
+    func configureUI() {
+        configureNavigationBar()
         
         view.backgroundColor = .backgroundColor
         
@@ -90,18 +99,11 @@ class LoginController: UIViewController {
         view.addSubview(dontHaveAccountButton)
         dontHaveAccountButton.centerX(inView: view)
         dontHaveAccountButton.anchor(bottom: view.safeAreaLayoutGuide.bottomAnchor, height: 32)
-        
-        
     }
     
-    override var preferredStatusBarStyle: UIStatusBarStyle {
-        return .lightContent
-    }
-    
-    // MARK: - Selectors
-    
-    @objc func handleShowSignUp() {
-        
+    func configureNavigationBar() {
+        navigationController?.navigationBar.isHidden = true
+        navigationController?.navigationBar.barStyle = .black
     }
     
 }
