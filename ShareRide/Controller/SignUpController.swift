@@ -139,17 +139,23 @@ class SignUpController: UIViewController {
         
         let stack = UIStackView(arrangedSubviews: [emailContainerView,
                                                    fullnameContainerView,
-                                                   passwordContainerView,
-                                                   accountTypeContainerView,
-                                                   signUpButton])
+                                                   passwordContainerView])
         stack.axis = .vertical
-        stack.distribution = .fillProportionally
+        stack.distribution = .fillEqually
         stack.spacing = 24
         
         view.addSubview(stack)
         stack.anchor(top: titleLabel.bottomAnchor, left: view.leftAnchor,
                      right: view.rightAnchor, paddingTop: 40, paddingLeft: 16,
                      paddingRight: 16)
+        
+        view.addSubview(accountTypeContainerView)
+        accountTypeContainerView.anchor(top: stack.bottomAnchor, left: view.leftAnchor,
+                                        right: view.rightAnchor, paddingTop: 36,
+                                        paddingLeft: 16, paddingRight: 16)
+        
+        view.addSubview(signUpButton)
+        signUpButton.anchor(top: accountTypeContainerView.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 36, paddingLeft: 24, paddingRight: 24)
         
         view.addSubview(alreadyHaveAccountButton)
         alreadyHaveAccountButton.centerX(inView: view)

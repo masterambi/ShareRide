@@ -102,8 +102,7 @@ class LoginController: UIViewController {
         titleLabel.centerX(inView: view)
         
         let stack = UIStackView(arrangedSubviews: [emailContainerView,
-                                                   passwordContainerView,
-                                                   loginButton])
+                                                   passwordContainerView])
         stack.axis = .vertical
         stack.distribution = .fillEqually
         stack.spacing = 24
@@ -112,6 +111,9 @@ class LoginController: UIViewController {
         stack.anchor(top: titleLabel.bottomAnchor, left: view.leftAnchor,
                      right: view.rightAnchor, paddingTop: 40, paddingLeft: 16,
                      paddingRight: 16)
+        
+        view.addSubview(loginButton)
+        loginButton.anchor(top: stack.bottomAnchor, left: view.leftAnchor, right: view.rightAnchor, paddingTop: 36, paddingLeft: 24, paddingRight: 24)
         
         view.addSubview(dontHaveAccountButton)
         dontHaveAccountButton.centerX(inView: view)

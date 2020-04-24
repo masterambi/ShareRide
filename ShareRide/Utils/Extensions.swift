@@ -38,7 +38,7 @@ extension UIView {
         
         if let sc = segmentedControl {
             imageView.anchor(top: view.topAnchor, left: view.leftAnchor,
-                             paddingTop: -4, paddingLeft: 8, width: 24, height: 24)
+                             paddingLeft: 8, width: 24, height: 24)
 
             view.addSubview(sc)
             sc.anchor(left: view.leftAnchor, right: view.rightAnchor,
