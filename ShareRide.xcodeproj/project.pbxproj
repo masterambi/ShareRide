@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,6 +15,7 @@
 		2C55E6912450882F0067D6A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C55E68F2450882F0067D6A0 /* LaunchScreen.storyboard */; };
 		2C55E69E2450894A0067D6A0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55E69D2450894A0067D6A0 /* LoginController.swift */; };
 		2C55E6A02450AAF80067D6A0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55E69F2450AAF80067D6A0 /* Extensions.swift */; };
+		2CB394D824540C17000AADF6 /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CB394D724540C17000AADF6 /* HomeController.swift */; };
 		2CEAE2A62452DB1B004DA852 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEAE2A52452DB1B004DA852 /* AuthButton.swift */; };
 		2CEAE2A82452E96B004DA852 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CEAE2A72452E96B004DA852 /* GoogleService-Info.plist */; };
 		4D9710916B0EC2AD9ED4B28B /* Pods_ShareRide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FC3E5B88582D1A7ED6DD /* Pods_ShareRide.framework */; };
@@ -31,6 +32,7 @@
 		2C55E6922450882F0067D6A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C55E69D2450894A0067D6A0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2C55E69F2450AAF80067D6A0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2CB394D724540C17000AADF6 /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
 		2CEAE2A52452DB1B004DA852 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		2CEAE2A72452E96B004DA852 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
 		558188D7575E347922E2A872 /* Pods-ShareRide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareRide.debug.xcconfig"; path = "Target Support Files/Pods-ShareRide/Pods-ShareRide.debug.xcconfig"; sourceTree = "<group>"; };
@@ -107,6 +109,7 @@
 			children = (
 				2C55E69D2450894A0067D6A0 /* LoginController.swift */,
 				2C46C1EE2451FCF500E26628 /* SignUpController.swift */,
+				2CB394D724540C17000AADF6 /* HomeController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -140,7 +143,6 @@
 				558188D7575E347922E2A872 /* Pods-ShareRide.debug.xcconfig */,
 				BB5B20881F14097D1EE958FE /* Pods-ShareRide.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -262,6 +264,7 @@
 			files = (
 				2C46C1EF2451FCF500E26628 /* SignUpController.swift in Sources */,
 				2CEAE2A62452DB1B004DA852 /* AuthButton.swift in Sources */,
+				2CB394D824540C17000AADF6 /* HomeController.swift in Sources */,
 				2C55E6852450882D0067D6A0 /* AppDelegate.swift in Sources */,
 				2C55E69E2450894A0067D6A0 /* LoginController.swift in Sources */,
 				2C55E6872450882D0067D6A0 /* SceneDelegate.swift in Sources */,
