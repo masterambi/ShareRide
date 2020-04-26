@@ -92,7 +92,6 @@ class HomeController: UIViewController {
         UIView.animate(withDuration: 0.5, animations: {
             self.locationInputView.alpha = 1
         }) { _ in
-            print("DEBUG: Present table view...")
         }
     }
     
