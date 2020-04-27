@@ -119,7 +119,9 @@ class SignUpController: UIViewController {
             
             Database.database().reference().child("users").child(uid).updateChildValues(values) { (error, ref) in
                 
-                guard let controller = UIApplication.shared.keyWindow?.rootViewController as? HomeController else { return }
+                let keyWindow = UIApplication.shared.windows.filter {$0.isKeyWindow}.first
+                
+                guard let controller = keyWindow?.rootViewController as? HomeController else { return }
                 controller.configureUI()
                 self.dismiss(animated: true, completion: nil)
             }
