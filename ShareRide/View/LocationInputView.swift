@@ -16,7 +16,12 @@ class LocationInputView: UIView {
 
     // MARK: - Properties
     
+    var user: User? {
+        didSet { titleLabel.text = user?.fullname }
+    }
+    
     weak var delegate: LocationInputViewDelegate?
+    
     
     private let backButton: UIButton = {
         let button = UIButton(type: .system)
@@ -27,7 +32,6 @@ class LocationInputView: UIView {
     
     private let titleLabel: UILabel = {
         let label = UILabel()
-        label.text = "Ramzy Rashaun"
         label.textColor = .darkGray
         label.font = UIFont.systemFont(ofSize: 16)
         return label
@@ -101,13 +105,13 @@ class LocationInputView: UIView {
         startingLocationTextField.anchor(top: backButton.bottomAnchor,
                                          left: leftAnchor, right: rightAnchor,
                                          paddingTop: 16, paddingLeft: 40,
-                                         paddingRight: 40, height: 30)
+                                         paddingRight: 40, height: 32)
         
         addSubview(destinationLocationTextField)
         destinationLocationTextField.anchor(top: startingLocationTextField.bottomAnchor,
                                          left: leftAnchor, right: rightAnchor,
                                          paddingTop: 16, paddingLeft: 40,
-                                         paddingRight: 40 ,height: 30)
+                                         paddingRight: 40 ,height: 32)
         
         addSubview(startLocationIndicatorView)
         startLocationIndicatorView.centerY(inView: startingLocationTextField,
