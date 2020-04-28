@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2C1377E024585616008093A4 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1377DF24585616008093A4 /* Service.swift */; };
+		2C1377E2245865B7008093A4 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C1377E1245865B7008093A4 /* User.swift */; };
 		2C46C1EF2451FCF500E26628 /* SignUpController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C46C1EE2451FCF500E26628 /* SignUpController.swift */; };
 		2C55E6852450882D0067D6A0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55E6842450882D0067D6A0 /* AppDelegate.swift */; };
 		2C55E6872450882D0067D6A0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55E6862450882D0067D6A0 /* SceneDelegate.swift */; };
@@ -25,6 +27,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2C1377DF24585616008093A4 /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		2C1377E1245865B7008093A4 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		2C46C1EE2451FCF500E26628 /* SignUpController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpController.swift; sourceTree = "<group>"; };
 		2C55E6812450882D0067D6A0 /* ShareRide.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ShareRide.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2C55E6842450882D0067D6A0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -106,6 +110,7 @@
 		2C55E699245088830067D6A0 /* Service */ = {
 			isa = PBXGroup;
 			children = (
+				2C1377DF24585616008093A4 /* Service.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -134,6 +139,7 @@
 		2C55E69C2450888B0067D6A0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				2C1377E1245865B7008093A4 /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -279,6 +285,8 @@
 				2C55E69E2450894A0067D6A0 /* LoginController.swift in Sources */,
 				2C8C9E7624570FB10052C1F2 /* LocationCell.swift in Sources */,
 				2C55E6872450882D0067D6A0 /* SceneDelegate.swift in Sources */,
+				2C1377E2245865B7008093A4 /* User.swift in Sources */,
+				2C1377E024585616008093A4 /* Service.swift in Sources */,
 				2C967F90245589A800AD6110 /* LocationInputActivationView.swift in Sources */,
 				2C55E6A02450AAF80067D6A0 /* Extensions.swift in Sources */,
 			);
