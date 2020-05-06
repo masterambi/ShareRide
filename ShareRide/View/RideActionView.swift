@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import MapKit
 
 class RideActionView: UIView {
 
@@ -56,7 +57,7 @@ class RideActionView: UIView {
     private let actionButton: UIButton = {
         let button = UIButton(type: .system)
         button.backgroundColor = .black
-        button.setTitle("CONFIRM RideX", for: .normal)
+        button.setTitle("CONFIRM RIDEX", for: .normal)
         button.setTitleColor(.white, for: .normal)
         button.titleLabel?.font = UIFont.boldSystemFont(ofSize: 20)
         button.addTarget(self, action: #selector(actionButtonPressed), for: .touchUpInside)
@@ -79,7 +80,7 @@ class RideActionView: UIView {
         
         addSubview(stack)
         stack.centerX(inView: self)
-        stack.anchor(top: topAnchor, paddingTop: 12)
+        stack.anchor(top: topAnchor, paddingTop: 16)
         
         addSubview(infoView)
         infoView.centerX(inView: self)
@@ -94,7 +95,7 @@ class RideActionView: UIView {
         let separatorView = UIView()
         separatorView.backgroundColor = .lightGray
         addSubview(separatorView)
-        separatorView.anchor(top: uberXLabel.bottomAnchor, left: leftAnchor, right: rightAnchor, paddingTop: 8, height: 0.75)
+        separatorView.anchor(top: uberXLabel.bottomAnchor, left: leftAnchor, right: rightAnchor, paddingTop: 12, height: 0.75)
         
         addSubview(actionButton)
         actionButton.anchor(left: leftAnchor, bottom: safeAreaLayoutGuide.bottomAnchor, right: rightAnchor, paddingLeft: 12, paddingBottom: 12, paddingRight: 12, height: 50)
