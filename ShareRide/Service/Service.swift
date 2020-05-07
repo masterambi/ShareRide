@@ -52,8 +52,6 @@ struct Service {
                       "state": TripState.requested.rawValue] as [String: Any]
         
         REF_TRIPS.child(uid).updateChildValues(values, withCompletionBlock: completion)
-        
-        
     }
     
 }
