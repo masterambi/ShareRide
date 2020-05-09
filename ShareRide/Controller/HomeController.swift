@@ -45,6 +45,7 @@ class HomeController: UIViewController {
             if user?.accountType == .passenger {
                 fetchDrivers()
                 configureLocationInputActivationView()
+                observeCurrentTrip()
             } else {
                 observeTrips()
             }
@@ -53,14 +54,22 @@ class HomeController: UIViewController {
     
     private var trip: Trip? {
         didSet {
-            guard let trip = trip else { return }
-            let controller = PickupController(trip: trip)
-            controller.delegate = self
-            if #available(iOS 13.0, *) {
-                controller.isModalInPresentation = true
+            guard let user = user else { return }
+            
+            if user.accountType == .driver {
+                guard let trip = trip else { return }
+                let controller = PickupController(trip: trip)
+                controller.delegate = self
+                if #available(iOS 13.0, *) {
+                    controller.isModalInPresentation = true
+                }
+                controller.modalPresentationStyle = .fullScreen
+                self.present(controller, animated: true, completion: nil)
+            } else {
+                print("DEBUG: Show ride action view for accepted trip...")
             }
-            controller.modalPresentationStyle = .fullScreen
-            self.present(controller, animated: true, completion: nil)
+            
+            
         }
     }
     
@@ -106,8 +115,17 @@ class HomeController: UIViewController {
         }
     }
     
-    
     // MARK: - API
+    
+    func observeCurrentTrip() {
+        Service.shared.observeCurrentTrip { trip in
+            self.trip = trip
+            
+            if trip.state == .accepted {
+                self.shouldPresentLoadingView(false)
+            }
+        }
+    }
     
     func fetchUserData() {
         guard let currentUid = Auth.auth().currentUser?.uid else { return }
