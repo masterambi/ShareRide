@@ -184,8 +184,7 @@ extension UIViewController {
             let indicator = UIActivityIndicatorView()
             indicator.style = .large
             indicator.color = .white
-            indicator.center = loadingView.center
-            indicator.tag = 2
+            indicator.center = view.center
             
             let label = UILabel()
             label.text = message
@@ -193,11 +192,10 @@ extension UIViewController {
             label.textColor = .white
             label.textAlignment = .center
             label.alpha = 0.87
-            label.tag = 3
             
             view.addSubview(loadingView)
-            view.addSubview(indicator)
-            view.addSubview(label)
+            loadingView.addSubview(indicator)
+            loadingView.addSubview(label)
             
             label.centerX(inView: loadingView)
             label.anchor(top: indicator.bottomAnchor, paddingTop: 32)
@@ -209,7 +207,7 @@ extension UIViewController {
             }
         } else {
             view.subviews.forEach { (subview) in
-                if subview.tag == 1 || subview.tag == 2 || subview.tag == 3 {
+                if subview.tag == 1 {
                     UIView.animate(withDuration: 0.3, animations: {
                         subview.alpha = 0
                     }) { (_) in
