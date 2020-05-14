@@ -316,7 +316,7 @@ class HomeController: UIViewController {
                 rideActionView.user = user
             }
             
-            rideActionView.configureUI(withConfig: config)
+            rideActionView.config = config
         }
         
     }
@@ -429,6 +429,8 @@ extension HomeController: CLLocationManagerDelegate {
     
     func locationManager(_ manager: CLLocationManager, didEnterRegion region: CLRegion) {
         print("DEBUG: Driver did enter passenger region...")
+        
+        self.rideActionView.config = .pickupPassenger
     }
     
     func enableLocationServices() {
@@ -565,7 +567,7 @@ extension HomeController: RideActionViewDelegate {
             self.actionButton.setImage(#imageLiteral(resourceName: "baseline_menu_black_36dp").withRenderingMode(.alwaysOriginal), for: .normal)
             self.actionButtonConfig = .showMenu
             
-            self.inputActivationView.alpha = 0
+            self.inputActivationView.alpha = 1
             
         }
     }
