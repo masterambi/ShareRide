@@ -224,7 +224,6 @@ class RideActionView: UIView {
             }
             
             titleLabel.text = "En Route To Destination"
-            
         case .endTrip:
             guard let user = user else { return }
             
@@ -235,7 +234,8 @@ class RideActionView: UIView {
                 buttonAction = .dropOff
                 actionButton.setTitle(buttonAction.description, for: .normal)
             }
-        
+            
+            titleLabel.text = "Arrived at Destination"
         }
     }
     
