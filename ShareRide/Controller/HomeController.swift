@@ -27,6 +27,10 @@ private enum AnnotationType: String {
     case destination
 }
 
+protocol HomeControllerDelegate: class {
+    func handleMenuToggle()
+}
+
 class HomeController: UIViewController {
     
     // MARK: - Properties
@@ -44,7 +48,9 @@ class HomeController: UIViewController {
     private var actionButtonConfig = ActionButtonConfiguration()
     private var route: MKRoute?
     
-    private var user: User? {
+    weak var delegate: HomeControllerDelegate?
+    
+    var user: User? {
         didSet {
             locationInputView.user = user
             if user?.accountType == .passenger {
@@ -106,7 +112,7 @@ class HomeController: UIViewController {
     @objc func actionButtonPressed() {
         switch actionButtonConfig {
         case .showMenu:
-            print("DEBUG: Handle show menu...")
+            delegate?.handleMenuToggle()
         case .dismissActionView:
             removeAnnotationsAndOverlays()
             mapView.showAnnotations(mapView.annotations, animated: true)
@@ -220,13 +226,6 @@ class HomeController: UIViewController {
     
     // MARK: - Shared API
     
-    func fetchUserData() {
-        guard let currentUid = Auth.auth().currentUser?.uid else { return }
-        Service.shared.fetchUserData(uid: currentUid) { user in
-            self.user = user
-        }
-    }
-    
     func checkIfUserIsLoggedIn() {
         if Auth.auth().currentUser?.uid == nil {
             DispatchQueue.main.async {
@@ -262,7 +261,6 @@ class HomeController: UIViewController {
     
     func configure() {
         configureUI()
-        fetchUserData()
     }
     
     fileprivate func configureActionButton(config: ActionButtonConfiguration) {
