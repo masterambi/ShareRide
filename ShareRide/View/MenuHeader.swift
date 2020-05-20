@@ -45,7 +45,7 @@ class MenuHeader: UIView {
         backgroundColor = .backgroundColor
         
         addSubview(profileImageView)
-        profileImageView.anchor(top: topAnchor, left: leftAnchor,
+        profileImageView.anchor(top: safeAreaLayoutGuide.topAnchor, left: leftAnchor,
                                 paddingTop: 12, paddingLeft: 12, width: 64, height: 64)
         
         profileImageView.layer.cornerRadius = 64 / 2

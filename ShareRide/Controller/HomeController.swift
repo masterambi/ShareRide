@@ -59,6 +59,7 @@ class HomeController: UIViewController {
                 observeCurrentTrip()
             } else {
                 observeTrips()
+                inputActivationView.alpha = 0
             }
         }
     }
