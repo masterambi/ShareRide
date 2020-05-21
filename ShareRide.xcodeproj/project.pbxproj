@@ -22,6 +22,8 @@
 		2C842E5024740E730070AF1B /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C842E4F24740E730070AF1B /* MenuController.swift */; };
 		2C842E5224740E920070AF1B /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C842E5124740E920070AF1B /* ContainerController.swift */; };
 		2C842E54247416A00070AF1B /* MenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C842E53247416A00070AF1B /* MenuHeader.swift */; };
+		2C842E562476C5A00070AF1B /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C842E552476C5A00070AF1B /* SettingsController.swift */; };
+		2C842E582476CCAD0070AF1B /* UserInfoHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C842E572476CCAD0070AF1B /* UserInfoHeader.swift */; };
 		2C8C9E7624570FB10052C1F2 /* LocationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C8C9E7524570FB10052C1F2 /* LocationCell.swift */; };
 		2C967F90245589A800AD6110 /* LocationInputActivationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C967F8F245589A800AD6110 /* LocationInputActivationView.swift */; };
 		2C967F922455CF8500AD6110 /* LocationInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C967F912455CF8500AD6110 /* LocationInputView.swift */; };
@@ -31,7 +33,7 @@
 		2CEA6C612465302000E3AC01 /* PickupController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEA6C602465302000E3AC01 /* PickupController.swift */; };
 		2CEAE2A62452DB1B004DA852 /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2CEAE2A52452DB1B004DA852 /* AuthButton.swift */; };
 		2CEAE2A82452E96B004DA852 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2CEAE2A72452E96B004DA852 /* GoogleService-Info.plist */; };
-		4D9710916B0EC2AD9ED4B28B /* Pods_ShareRide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA35FC3E5B88582D1A7ED6DD /* Pods_ShareRide.framework */; };
+		DA5ACBF04FFD7E5A0BF9DF98 /* Pods_ShareRide.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF521461C59891937D3523A9 /* Pods_ShareRide.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +54,8 @@
 		2C842E4F24740E730070AF1B /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		2C842E5124740E920070AF1B /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
 		2C842E53247416A00070AF1B /* MenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeader.swift; sourceTree = "<group>"; };
+		2C842E552476C5A00070AF1B /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		2C842E572476CCAD0070AF1B /* UserInfoHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserInfoHeader.swift; sourceTree = "<group>"; };
 		2C8C9E7524570FB10052C1F2 /* LocationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationCell.swift; sourceTree = "<group>"; };
 		2C967F8F245589A800AD6110 /* LocationInputActivationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInputActivationView.swift; sourceTree = "<group>"; };
 		2C967F912455CF8500AD6110 /* LocationInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationInputView.swift; sourceTree = "<group>"; };
@@ -61,9 +65,9 @@
 		2CEA6C602465302000E3AC01 /* PickupController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickupController.swift; sourceTree = "<group>"; };
 		2CEAE2A52452DB1B004DA852 /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
 		2CEAE2A72452E96B004DA852 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "GoogleService-Info.plist"; sourceTree = SOURCE_ROOT; };
-		558188D7575E347922E2A872 /* Pods-ShareRide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareRide.debug.xcconfig"; path = "Target Support Files/Pods-ShareRide/Pods-ShareRide.debug.xcconfig"; sourceTree = "<group>"; };
-		BB5B20881F14097D1EE958FE /* Pods-ShareRide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareRide.release.xcconfig"; path = "Target Support Files/Pods-ShareRide/Pods-ShareRide.release.xcconfig"; sourceTree = "<group>"; };
-		DA35FC3E5B88582D1A7ED6DD /* Pods_ShareRide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareRide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4C9FE8CE4D168203261EF0CD /* Pods-ShareRide.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareRide.release.xcconfig"; path = "Target Support Files/Pods-ShareRide/Pods-ShareRide.release.xcconfig"; sourceTree = "<group>"; };
+		ACE59BE1D93C365ADCF88F82 /* Pods-ShareRide.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ShareRide.debug.xcconfig"; path = "Target Support Files/Pods-ShareRide/Pods-ShareRide.debug.xcconfig"; sourceTree = "<group>"; };
+		BF521461C59891937D3523A9 /* Pods_ShareRide.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ShareRide.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +75,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4D9710916B0EC2AD9ED4B28B /* Pods_ShareRide.framework in Frameworks */,
+				DA5ACBF04FFD7E5A0BF9DF98 /* Pods_ShareRide.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,7 +88,7 @@
 				2C55E6832450882D0067D6A0 /* ShareRide */,
 				2C55E6822450882D0067D6A0 /* Products */,
 				D3B94B92A6486A61FD938C9C /* Pods */,
-				6BCD90BA86F77955EABD9ADA /* Frameworks */,
+				9407DC163238492239D218CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +143,7 @@
 				2C842E4D24740E1D0070AF1B /* Authentication */,
 				2CB394D724540C17000AADF6 /* HomeController.swift */,
 				2CEA6C602465302000E3AC01 /* PickupController.swift */,
+				2C842E552476C5A00070AF1B /* SettingsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -152,6 +157,7 @@
 				2C8C9E7524570FB10052C1F2 /* LocationCell.swift */,
 				2C50A0DE2462BF8000688092 /* RideActionView.swift */,
 				2C842E53247416A00070AF1B /* MenuHeader.swift */,
+				2C842E572476CCAD0070AF1B /* UserInfoHeader.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -184,10 +190,10 @@
 			path = SideMenu;
 			sourceTree = "<group>";
 		};
-		6BCD90BA86F77955EABD9ADA /* Frameworks */ = {
+		9407DC163238492239D218CF /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				DA35FC3E5B88582D1A7ED6DD /* Pods_ShareRide.framework */,
+				BF521461C59891937D3523A9 /* Pods_ShareRide.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -195,8 +201,8 @@
 		D3B94B92A6486A61FD938C9C /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				558188D7575E347922E2A872 /* Pods-ShareRide.debug.xcconfig */,
-				BB5B20881F14097D1EE958FE /* Pods-ShareRide.release.xcconfig */,
+				ACE59BE1D93C365ADCF88F82 /* Pods-ShareRide.debug.xcconfig */,
+				4C9FE8CE4D168203261EF0CD /* Pods-ShareRide.release.xcconfig */,
 			);
 			path = Pods;
 			sourceTree = "<group>";
@@ -208,11 +214,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2C55E6952450882F0067D6A0 /* Build configuration list for PBXNativeTarget "ShareRide" */;
 			buildPhases = (
-				7119015B585DB114E7A29386 /* [CP] Check Pods Manifest.lock */,
+				8E6BF57F990DDA6B62010FE9 /* [CP] Check Pods Manifest.lock */,
 				2C55E67D2450882D0067D6A0 /* Sources */,
 				2C55E67E2450882D0067D6A0 /* Frameworks */,
 				2C55E67F2450882D0067D6A0 /* Resources */,
-				A7F2E8735411C4EB5D8B194C /* [CP] Embed Pods Frameworks */,
+				C575095494487567888C78C9 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -271,7 +277,7 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		7119015B585DB114E7A29386 /* [CP] Check Pods Manifest.lock */ = {
+		8E6BF57F990DDA6B62010FE9 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -293,7 +299,7 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		A7F2E8735411C4EB5D8B194C /* [CP] Embed Pods Frameworks */ = {
+		C575095494487567888C78C9 /* [CP] Embed Pods Frameworks */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -320,6 +326,8 @@
 				2C46C1EF2451FCF500E26628 /* SignUpController.swift in Sources */,
 				2CEAE2A62452DB1B004DA852 /* AuthButton.swift in Sources */,
 				2CB394D824540C17000AADF6 /* HomeController.swift in Sources */,
+				2C842E582476CCAD0070AF1B /* UserInfoHeader.swift in Sources */,
+				2C842E562476C5A00070AF1B /* SettingsController.swift in Sources */,
 				2C967F922455CF8500AD6110 /* LocationInputView.swift in Sources */,
 				2C50A0E12463FD1700688092 /* Trip.swift in Sources */,
 				2CEA6C612465302000E3AC01 /* PickupController.swift in Sources */,
@@ -412,11 +420,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
@@ -466,10 +475,11 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -478,9 +488,10 @@
 		};
 		2C55E6962450882F0067D6A0 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 558188D7575E347922E2A872 /* Pods-ShareRide.debug.xcconfig */;
+			baseConfigurationReference = ACE59BE1D93C365ADCF88F82 /* Pods-ShareRide.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 349PFPP3ST;
 				INFOPLIST_FILE = ShareRide/Info.plist;
@@ -490,6 +501,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ShareRide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -497,9 +509,10 @@
 		};
 		2C55E6972450882F0067D6A0 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = BB5B20881F14097D1EE958FE /* Pods-ShareRide.release.xcconfig */;
+			baseConfigurationReference = 4C9FE8CE4D168203261EF0CD /* Pods-ShareRide.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "-";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 349PFPP3ST;
 				INFOPLIST_FILE = ShareRide/Info.plist;
@@ -509,6 +522,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.example.ShareRide;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
