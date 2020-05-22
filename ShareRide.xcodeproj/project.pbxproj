@@ -19,6 +19,7 @@
 		2C55E6912450882F0067D6A0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2C55E68F2450882F0067D6A0 /* LaunchScreen.storyboard */; };
 		2C55E69E2450894A0067D6A0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55E69D2450894A0067D6A0 /* LoginController.swift */; };
 		2C55E6A02450AAF80067D6A0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55E69F2450AAF80067D6A0 /* Extensions.swift */; };
+		2C5FEA752478171100399010 /* AddLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FEA742478171100399010 /* AddLocationController.swift */; };
 		2C842E5024740E730070AF1B /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C842E4F24740E730070AF1B /* MenuController.swift */; };
 		2C842E5224740E920070AF1B /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C842E5124740E920070AF1B /* ContainerController.swift */; };
 		2C842E54247416A00070AF1B /* MenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C842E53247416A00070AF1B /* MenuHeader.swift */; };
@@ -51,6 +52,7 @@
 		2C55E6922450882F0067D6A0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2C55E69D2450894A0067D6A0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2C55E69F2450AAF80067D6A0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		2C5FEA742478171100399010 /* AddLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationController.swift; sourceTree = "<group>"; };
 		2C842E4F24740E730070AF1B /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		2C842E5124740E920070AF1B /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
 		2C842E53247416A00070AF1B /* MenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeader.swift; sourceTree = "<group>"; };
@@ -139,11 +141,11 @@
 		2C55E69A245088850067D6A0 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				2C5FEA73247816EF00399010 /* Settings */,
 				2C842E4E24740E4D0070AF1B /* SideMenu */,
 				2C842E4D24740E1D0070AF1B /* Authentication */,
 				2CB394D724540C17000AADF6 /* HomeController.swift */,
 				2CEA6C602465302000E3AC01 /* PickupController.swift */,
-				2C842E552476C5A00070AF1B /* SettingsController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -170,6 +172,15 @@
 				2C50A0E02463FD1700688092 /* Trip.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		2C5FEA73247816EF00399010 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				2C842E552476C5A00070AF1B /* SettingsController.swift */,
+				2C5FEA742478171100399010 /* AddLocationController.swift */,
+			);
+			path = Settings;
 			sourceTree = "<group>";
 		};
 		2C842E4D24740E1D0070AF1B /* Authentication */ = {
@@ -334,6 +345,7 @@
 				2CE58839245ADEA500A29918 /* DriverAnnotation.swift in Sources */,
 				2C55E6852450882D0067D6A0 /* AppDelegate.swift in Sources */,
 				2C55E69E2450894A0067D6A0 /* LoginController.swift in Sources */,
+				2C5FEA752478171100399010 /* AddLocationController.swift in Sources */,
 				2C8C9E7624570FB10052C1F2 /* LocationCell.swift in Sources */,
 				2C842E5024740E730070AF1B /* MenuController.swift in Sources */,
 				2CE58837245987F900A29918 /* LocationHandler.swift in Sources */,
