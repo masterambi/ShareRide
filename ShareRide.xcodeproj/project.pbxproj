@@ -20,6 +20,7 @@
 		2C55E69E2450894A0067D6A0 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55E69D2450894A0067D6A0 /* LoginController.swift */; };
 		2C55E6A02450AAF80067D6A0 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C55E69F2450AAF80067D6A0 /* Extensions.swift */; };
 		2C5FEA752478171100399010 /* AddLocationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FEA742478171100399010 /* AddLocationController.swift */; };
+		2C5FEA77247B99C000399010 /* CircularProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C5FEA76247B99C000399010 /* CircularProgressView.swift */; };
 		2C842E5024740E730070AF1B /* MenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C842E4F24740E730070AF1B /* MenuController.swift */; };
 		2C842E5224740E920070AF1B /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C842E5124740E920070AF1B /* ContainerController.swift */; };
 		2C842E54247416A00070AF1B /* MenuHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C842E53247416A00070AF1B /* MenuHeader.swift */; };
@@ -53,6 +54,7 @@
 		2C55E69D2450894A0067D6A0 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
 		2C55E69F2450AAF80067D6A0 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		2C5FEA742478171100399010 /* AddLocationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddLocationController.swift; sourceTree = "<group>"; };
+		2C5FEA76247B99C000399010 /* CircularProgressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularProgressView.swift; sourceTree = "<group>"; };
 		2C842E4F24740E730070AF1B /* MenuController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuController.swift; sourceTree = "<group>"; };
 		2C842E5124740E920070AF1B /* ContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContainerController.swift; sourceTree = "<group>"; };
 		2C842E53247416A00070AF1B /* MenuHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuHeader.swift; sourceTree = "<group>"; };
@@ -160,6 +162,7 @@
 				2C50A0DE2462BF8000688092 /* RideActionView.swift */,
 				2C842E53247416A00070AF1B /* MenuHeader.swift */,
 				2C842E572476CCAD0070AF1B /* UserInfoHeader.swift */,
+				2C5FEA76247B99C000399010 /* CircularProgressView.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -344,6 +347,7 @@
 				2CEA6C612465302000E3AC01 /* PickupController.swift in Sources */,
 				2CE58839245ADEA500A29918 /* DriverAnnotation.swift in Sources */,
 				2C55E6852450882D0067D6A0 /* AppDelegate.swift in Sources */,
+				2C5FEA77247B99C000399010 /* CircularProgressView.swift in Sources */,
 				2C55E69E2450894A0067D6A0 /* LoginController.swift in Sources */,
 				2C5FEA752478171100399010 /* AddLocationController.swift in Sources */,
 				2C8C9E7624570FB10052C1F2 /* LocationCell.swift in Sources */,
