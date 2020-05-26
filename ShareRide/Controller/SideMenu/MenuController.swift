@@ -84,12 +84,14 @@ extension MenuController {
         
         guard let option = MenuOptions(rawValue: indexPath.row) else { return UITableViewCell() }
         cell.textLabel?.text = option.description
+        cell.selectionStyle = .none
         
         return cell
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         guard let option = MenuOptions(rawValue: indexPath.row) else { return }
+        
         delegate?.didSelect(option: option)
     }
 }
