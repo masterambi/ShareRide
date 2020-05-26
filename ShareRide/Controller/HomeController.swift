@@ -104,12 +104,6 @@ class HomeController: UIViewController {
         configureUI()
     }
     
-    override func viewWillAppear(_ animated: Bool) {
-        guard let trip = trip else { return }
-        print("DEBUG: Trip state is \(trip.state)")
-    }
-    
-    
     // MARK: - Selectors
     
     @objc func actionButtonPressed() {
