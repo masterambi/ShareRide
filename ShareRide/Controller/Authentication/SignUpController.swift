@@ -67,8 +67,6 @@ class SignUpController: UIViewController {
     private let accountTypeSegmentedControl: UISegmentedControl = {
         let sc = UISegmentedControl(items: ["Rider", "Driver"])
         sc.backgroundColor = .backgroundColor
-        sc.layer.borderColor = UIColor(white: 1, alpha: 0.87).cgColor
-        sc.layer.borderWidth = 1
         sc.selectedSegmentTintColor = UIColor(white: 1, alpha: 0.87)
         
         let normalTitleTextAttributes = [NSAttributedString.Key.foregroundColor: UIColor(white: 1, alpha: 0.87)]

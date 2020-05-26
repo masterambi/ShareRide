@@ -53,14 +53,7 @@ class ContainerController: UIViewController {
     
     func checkIfUserIsLoggedIn() {
         if Auth.auth().currentUser?.uid == nil {
-            DispatchQueue.main.async {
-                let nav = UINavigationController(rootViewController: LoginController())
-                if #available(iOS 13.0, *) {
-                    nav.isModalInPresentation = true
-                }
-                nav.modalPresentationStyle = .fullScreen
-                self.present(nav, animated: true, completion: nil)
-            }
+            presentLoginController()
         } else {
             configure()
         }
@@ -76,20 +69,22 @@ class ContainerController: UIViewController {
     func signOut() {
         do {
             try Auth.auth().signOut()
-            DispatchQueue.main.async {
-                let nav = UINavigationController(rootViewController: LoginController())
-                if #available(iOS 13.0, *) {
-                    nav.isModalInPresentation = true
-                }
-                nav.modalPresentationStyle = .fullScreen
-                self.present(nav, animated: true, completion: nil)
-            }
+            presentLoginController()
         } catch {
             print("DEBUG: Error signing out")
         }
     }
     
     // MARK: - Helper Functions
+    
+    func presentLoginController() {
+        DispatchQueue.main.async {
+            let nav = UINavigationController(rootViewController: LoginController())
+            nav.isModalInPresentation = true
+            nav.modalPresentationStyle = .fullScreen
+            self.present(nav, animated: true, completion: nil)
+        }
+    }
     
     func configure() {
         view.backgroundColor = .backgroundColor
@@ -186,8 +181,6 @@ extension ContainerController: MenuControllerDelegate {
                 let controller = SettingsController(user: user)
                 controller.delegate = self
                 let nav = UINavigationController(rootViewController: controller)
-                nav.isModalInPresentation = true
-                nav.modalPresentationStyle = .fullScreen
                 self.present(nav, animated: true, completion: nil)
             case .logout:
                 let alert = UIAlertController(title: nil,
